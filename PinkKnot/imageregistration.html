@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Registration</title>
+<link rel="stylesheet" href="mystyle.css">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+
+<body>
+<section id="join">
+    <h1 style="text-align:center;margin-top:-50px; margin-bottom:0">Upload Scans</h1>
+<br></br>
+    <div class="feature-row">
+        <div class="feature-col">
+            <img src="images/upload.png">
+            <h4>Mammographs</h4>
+	    <form action="imageregistration.php" method="POST"
+            enctype="multipart/form-data"> 
+        <p> 
+            Select files to upload:  
+              
+            <!-- name of the input fields are going to 
+                be used in our php script-->
+            <input type="file" name="files[]" multiple> 
+              
+            <br><br> 
+              
+             
+        </p> 
+    </form> 
+
+            <p></p>
+        </div>
+        <div class="feature-col">
+            <img src="images/upload.png">
+            <h4>Ultrasound</h4>
+<form action="imageregistration.php" method="POST"
+            enctype="multipart/form-data"> 
+        <p> 
+            Select files to upload:  
+              
+            <!-- name of the input fields are going to 
+                be used in our php script-->
+            <input type="file" name="files[]" multiple> 
+              
+            <br><br> 
+              
+             
+        </p> 
+    </form> 
+            <p></p>
+        </div>
+        <div class="feature-col">
+            <img src="images/upload.png">
+            <h4>MRI</h4>
+<form action="imageregistration.php" method="POST"
+            enctype="multipart/form-data"> 
+        <p> 
+            Select files to upload:  
+              
+            <!-- name of the input fields are going to 
+                be used in our php script-->
+            <input type="file" name="files[]" multiple> 
+              
+            <br><br> 
+              
+            
+        </p> 
+    </form> 
+            <p></p>
+        </div>
+    </div>
+<div style="margin-left: 500px">
+<form><p>
+ <input align:"center" type="submit" name="submit" value="Upload" >
+</p></form>
+</div>
+    <div class="feature-btn">
+       <div class="line">
+            <span class="line-1"></span><br>
+            <span class="line-2"></span><br>
+            <span class="line-3"></span>
+        </div>
+        <button class="common-btn">Get The View</button>
+    </div>
+</section>  
+</body>
+</html>
